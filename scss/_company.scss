@@ -1,0 +1,44 @@
+/*company*/
+
+.company {
+  padding: 44.5px 15px 50px 15px;
+  background: #020a18;
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+    row-gap: 50px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25%;
+    padding: 0px 15px;
+    @media (max-width: 767.98px) {
+      flex: 1 1 50%;
+    }
+    @media (max-width: 550px) {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+
+  &__picture {
+    padding: 0px 0px 20% 0px;
+  }
+
+  &__image {
+    max-width: 294px;
+    max-height: 50px;
+    @media (max-width: 550px) {
+      max-width: none;
+      max-height: none;
+    }
+  }
+  &__image img {
+  }
+}
