@@ -1,0 +1,67 @@
+.link {
+	font-size: 16px;
+	line-height: 1.18;
+	color: #FFFFFF;
+	background: #3A68B8;
+	border-radius: 5px;
+	padding: 13px 30px;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in;
+	text-transform: capitalize;
+}
+
+.link:hover {
+	background-color: #5289ea;
+}
+
+.take__{
+	display: block;
+}
+
+.apple__link{
+	background: #150C01;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	padding: 15px 30px 15px 62px;
+	cursor: pointer;
+	position: relative;
+	margin: 0px 30px 0px 0px;
+	&:hover{
+		box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+	}
+	&::before{
+		position: absolute;
+		content: "";
+		top: 10px;
+		left: 20px;
+		width: 26px;
+		height: 26px;
+		background: url("../img/take/apple-icon.svg") no-repeat;
+		&:hover{
+			transform: translate(20px, 20px);
+		}
+	}
+}
+
+.google__link{
+	border: 1.5px solid #150c012c;
+	border-radius: 5px;
+	padding: 15px 30px 15px 62px;
+	position: relative;
+	cursor: pointer;
+	&::before{
+		position: absolute;
+		content: "";
+		top: 10px;
+		left: 20px;
+		width: 26px;
+		height: 26px;
+		background: url("../img/take/google-play-icon.svg") no-repeat;
+	}
+	&:hover{
+		border: 1.5px solid #8b7f70c1;
+	}
+}
